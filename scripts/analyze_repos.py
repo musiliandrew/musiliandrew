@@ -279,17 +279,33 @@ def main():
     username = "musiliandrew"  # Your GitHub username
     token = os.getenv('GITHUB_TOKEN')  # GitHub token from environment
     
+    if not token:
+        print("❌ No GITHUB_TOKEN found!")
+        return
+    
     analyzer = GitHubRepoAnalyzer(username, token)
     
     print("🔍 Fetching repositories...")
     repos = analyzer.get_repositories()
     print(f"📦 Found {len(repos)} repositories")
     
+    # Show first few repos for debugging
+    for i, repo in enumerate(repos[:5]):
+        print(f"  {i+1}. {repo['name']} ({repo.get('language', 'Unknown')})")
+    
     print("🔬 Analyzing technologies...")
     analyzer.analyze_repository_languages(repos)
     
+    # Debug: Show detected technologies
+    print(f"🔍 Detected technologies: {dict(analyzer.tech_usage)}")
+    
     print("🎨 Generating badges...")
     badges = analyzer.generate_tech_badges()
+    
+    # Debug: Show generated badges
+    for category, badge_list in badges.items():
+        if badge_list:
+            print(f"  {category}: {len(badge_list)} badges")
     
     print("📝 Updating README...")
     analyzer.update_readme(badges)
