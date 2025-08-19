@@ -339,14 +339,19 @@ class GitHubRepoAnalyzer:
         # Replace sections using regex
         import re
         
-        # Replace tech stack section
-        tech_pattern = r'## 🛠️ Technology Stack.*?(?=## |\Z)'
-        new_content = re.sub(tech_pattern, tech_section, content, flags=re.DOTALL)
+        # Replace tech stack section - improved pattern to handle multiple sections
+        tech_pattern = r'## 🛠️ Technology Stack.*?(?=---\s*$|## [^🛠]|\Z)'
+        if re.search(tech_pattern, content, flags=re.DOTALL | re.MULTILINE):
+            new_content = re.sub(tech_pattern, tech_section.rstrip(), content, flags=re.DOTALL | re.MULTILINE)
+        else:
+            # Insert after About Me section
+            about_pattern = r'(---\s*$)'
+            new_content = re.sub(about_pattern, f'\\1\n{tech_section}', content, flags=re.MULTILINE)
         
-        # Replace or add popular repos section (place before GitHub Analytics)
-        popular_pattern = r'## 🌟 Featured Projects.*?(?=## |\Z)'
-        if re.search(popular_pattern, new_content, flags=re.DOTALL):
-            new_content = re.sub(popular_pattern, popular_section, new_content, flags=re.DOTALL)
+        # Replace or add popular repos section - improved pattern
+        popular_pattern = r'## 🌟 Featured Projects.*?(?=---\s*$|## [^🌟]|\Z)'
+        if re.search(popular_pattern, new_content, flags=re.DOTALL | re.MULTILINE):
+            new_content = re.sub(popular_pattern, popular_section.rstrip(), new_content, flags=re.DOTALL | re.MULTILINE)
         else:
             # Insert before GitHub Analytics section
             analytics_pattern = r'(## 📊 GitHub Analytics)'
