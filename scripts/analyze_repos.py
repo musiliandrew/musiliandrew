@@ -272,6 +272,31 @@ class GitHubRepoAnalyzer:
             
         return metrics
 
+    def clean_duplicated_sections(self, content):
+        """Clean up duplicated sections in the README"""
+        import re
+        
+        # Remove duplicate tech stack sections (keep only the first complete one)
+        tech_duplicates = r'(## 🔥 Languages.*?(?=## |---|\Z))'
+        matches = re.findall(tech_duplicates, content, flags=re.DOTALL)
+        if len(matches) > 1:
+            # Keep only the last/most complete version
+            for match in matches[:-1]:
+                content = content.replace(match, '', 1)
+        
+        # Remove duplicate featured projects sections
+        project_duplicates = r'(## \d+\. \[.*?\]\(https://github\.com/.*?\).*?(?=## \d+\.|\n---\n|\Z))'
+        matches = re.findall(project_duplicates, content, flags=re.DOTALL)
+        if len(matches) > 5:  # If more than 5 projects, we have duplicates
+            # Remove duplicates (keep first 5)
+            for match in matches[5:]:
+                content = content.replace(match, '', 1)
+        
+        # Clean up multiple consecutive newlines
+        content = re.sub(r'\n{3,}', '\n\n', content)
+        
+        return content
+
     def get_popular_repos(self, repos, limit=5):
         """Get popular repositories with enhanced metrics and better ranking"""
         popular_repos = []
@@ -478,23 +503,30 @@ class GitHubRepoAnalyzer:
         # Replace sections using regex
         import re
         
-        # Replace tech stack section - improved pattern to handle multiple sections
-        tech_pattern = r'## 🛠️ Technology Stack.*?(?=---\s*$|## [^🛠]|\Z)'
-        if re.search(tech_pattern, content, flags=re.DOTALL | re.MULTILINE):
-            new_content = re.sub(tech_pattern, tech_section.rstrip(), content, flags=re.DOTALL | re.MULTILINE)
-        else:
-            # Insert after About Me section
-            about_pattern = r'(---\s*$)'
-            new_content = re.sub(about_pattern, f'\\1\n{tech_section}', content, flags=re.MULTILINE)
+        # Clean up any existing duplicated content first
+        content = self.clean_duplicated_sections(content)
         
-        # Replace or add popular repos section - improved pattern
-        popular_pattern = r'## 🌟 Featured Projects.*?(?=---\s*$|## [^🌟]|\Z)'
-        if re.search(popular_pattern, new_content, flags=re.DOTALL | re.MULTILINE):
-            new_content = re.sub(popular_pattern, popular_section.rstrip(), new_content, flags=re.DOTALL | re.MULTILINE)
+        # Replace tech stack section with more precise pattern
+        tech_pattern = r'## 🛠️ Technology Stack.*?(?=\n---|\n## (?!🛠️)|\Z)'
+        if re.search(tech_pattern, content, flags=re.DOTALL):
+            new_content = re.sub(tech_pattern, tech_section.rstrip(), content, flags=re.DOTALL)
+        else:
+            # Insert after About Me section (after first ---)
+            about_pattern = r'(---\n\n)'
+            new_content = re.sub(about_pattern, f'\\1{tech_section}', content, count=1)
+        
+        # Replace or add popular repos section with precise pattern  
+        popular_pattern = r'## 🌟 Featured Projects.*?(?=\n---|\n## (?!🌟)|\Z)'
+        if re.search(popular_pattern, new_content, flags=re.DOTALL):
+            new_content = re.sub(popular_pattern, popular_section.rstrip(), new_content, flags=re.DOTALL)
         else:
             # Insert before GitHub Analytics section
             analytics_pattern = r'(## 📊 GitHub Analytics)'
-            new_content = re.sub(analytics_pattern, f'{popular_section}---\n\n\\1', new_content)
+            if re.search(analytics_pattern, new_content):
+                new_content = re.sub(analytics_pattern, f'{popular_section}---\n\n\\1', new_content)
+            else:
+                # If no analytics section, append before the end
+                new_content = new_content.rstrip() + f'\n\n{popular_section}---\n'
         
         with open(readme_path, 'w') as f:
             f.write(new_content)
