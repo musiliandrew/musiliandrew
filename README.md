@@ -90,14 +90,7 @@ Landing page
 
 🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
 
-### 4. [esaySample](https://github.com/musiliandrew/esaySample)
-No description available
-
-![HTML](https://img.shields.io/badge/-HTML-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://kenyattaaccomodations.vercel.app](https://kenyattaaccomodations.vercel.app)
-
-### 5. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
+### 4. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
 Prottotype Presentation
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
