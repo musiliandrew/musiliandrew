@@ -301,8 +301,15 @@ class GitHubRepoAnalyzer:
         """Get popular repositories with enhanced metrics and better ranking"""
         popular_repos = []
         
+        # Hardcoded filter for specific repos to exclude
+        excluded_repos = ['esaySample']
+        
         for repo in repos:
             if repo['fork'] or repo['archived'] or repo['private']:
+                continue
+                
+            # Skip excluded repositories
+            if repo['name'] in excluded_repos:
                 continue
                 
             # Get detailed metrics
