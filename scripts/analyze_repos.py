@@ -227,50 +227,135 @@ class GitHubRepoAnalyzer:
         
         return badges
     
+    def get_detailed_repo_metrics(self, repo):
+        """Get detailed metrics for a repository including contributions and releases"""
+        metrics = {
+            'releases': [],
+            'contributors_count': 0,
+            'commits_count': 0,
+            'issues_count': repo.get('open_issues_count', 0),
+            'forks': repo.get('forks_count', 0),
+            'watchers': repo.get('watchers_count', 0),
+            'size_kb': repo.get('size', 0),
+            'latest_release': None
+        }
+        
+        # Only fetch detailed metrics for repos with some activity
+        if repo['stargazers_count'] == 0 and repo.get('forks_count', 0) == 0:
+            return metrics
+        
+        try:
+            # Get releases information (limit to first page)
+            releases_url = f"https://api.github.com/repos/{self.username}/{repo['name']}/releases?per_page=5"
+            releases_response = requests.get(releases_url, headers=self.headers)
+            if releases_response.status_code == 200:
+                releases = releases_response.json()
+                metrics['releases'] = releases
+                if releases:
+                    metrics['latest_release'] = releases[0]
+        except:
+            pass
+            
+        try:
+            # Get contributors count (limit to first page for performance)
+            contributors_url = f"https://api.github.com/repos/{self.username}/{repo['name']}/contributors?per_page=100"
+            contributors_response = requests.get(contributors_url, headers=self.headers)
+            if contributors_response.status_code == 200:
+                contributors = contributors_response.json()
+                metrics['contributors_count'] = len(contributors)
+                
+                # Approximate commits count from contributors data
+                total_contributions = sum(c.get('contributions', 0) for c in contributors)
+                metrics['commits_count'] = total_contributions
+        except:
+            pass
+            
+        return metrics
+
     def get_popular_repos(self, repos, limit=5):
-        """Get popular repositories based on stars, websites, and releases"""
+        """Get popular repositories with enhanced metrics and better ranking"""
         popular_repos = []
         
         for repo in repos:
             if repo['fork'] or repo['archived'] or repo['private']:
                 continue
                 
-            score = 0
-            # Score based on stars
-            score += repo['stargazers_count'] * 2
+            # Get detailed metrics
+            metrics = self.get_detailed_repo_metrics(repo)
             
-            # Bonus for having a website
-            if repo['homepage']:
-                score += 10
-                
-            # Bonus for recent activity
+            # Enhanced scoring algorithm
+            score = 0
+            
+            # Base scores
+            score += repo['stargazers_count'] * 3  # Stars are important
+            score += metrics['forks'] * 2  # Forks indicate usefulness
+            score += metrics['watchers'] * 1  # Watchers show interest
+            score += metrics['contributors_count'] * 5  # Multiple contributors = active project
+            
+            # Release scoring
+            if metrics['releases']:
+                score += len(metrics['releases']) * 4  # Each release adds value
+                # Bonus for recent releases
+                if metrics['latest_release']:
+                    try:
+                        from datetime import datetime, timezone
+                        release_date = datetime.fromisoformat(metrics['latest_release']['published_at'].replace('Z', '+00:00'))
+                        days_since_release = (datetime.now(timezone.utc) - release_date).days
+                        if days_since_release < 90:  # Recent release
+                            score += 10
+                        elif days_since_release < 365:  # Somewhat recent
+                            score += 5
+                    except:
+                        pass
+            
+            # Activity bonus
             from datetime import datetime, timezone
             updated = datetime.fromisoformat(repo['updated_at'].replace('Z', '+00:00'))
             days_old = (datetime.now(timezone.utc) - updated).days
             if days_old < 30:
-                score += 5
+                score += 8  # Very active
             elif days_old < 90:
+                score += 5  # Recently active
+            elif days_old < 365:
+                score += 2  # Moderately active
+            
+            # Project maturity bonus
+            if metrics['commits_count'] > 100:
+                score += 5
+            if metrics['commits_count'] > 500:
+                score += 5
+                
+            # Website/documentation bonus
+            if repo['homepage']:
+                score += 8
+                
+            # Size consideration (not too small, not too large)
+            if 100 < metrics['size_kb'] < 50000:  # Sweet spot for project size
+                score += 3
+                
+            # Language popularity bonus (for commonly used languages)
+            popular_languages = ['Python', 'JavaScript', 'TypeScript', 'Java', 'Go', 'Rust']
+            if repo.get('language') in popular_languages:
                 score += 2
                 
-            # Check for releases
-            try:
-                releases_url = f"https://api.github.com/repos/{self.username}/{repo['name']}/releases"
-                releases_response = requests.get(releases_url, headers=self.headers)
-                if releases_response.status_code == 200:
-                    releases = releases_response.json()
-                    if releases:
-                        score += len(releases) * 3
-            except:
-                pass
-                
-            if score > 0:
+            if score > 5:  # Only include projects with meaningful activity
                 popular_repos.append({
                     'name': repo['name'],
                     'description': repo['description'] or 'No description available',
                     'stars': repo['stargazers_count'],
+                    'forks': metrics['forks'],
+                    'watchers': metrics['watchers'],
                     'language': repo['language'],
                     'url': repo['html_url'],
                     'homepage': repo['homepage'],
+                    'contributors_count': metrics['contributors_count'],
+                    'releases_count': len(metrics['releases']),
+                    'latest_release': metrics['latest_release'],
+                    'commits_count': metrics['commits_count'],
+                    'issues_count': metrics['issues_count'],
+                    'size_kb': metrics['size_kb'],
+                    'last_updated': repo['updated_at'],
+                    'created_at': repo['created_at'],
                     'score': score
                 })
         
@@ -317,23 +402,77 @@ class GitHubRepoAnalyzer:
             tech_section += "### ☁️ Cloud & DevOps\n"
             tech_section += "\n".join(badges['cloud_devops']) + "\n\n"
         
-        # Build popular repos section
+        # Build enhanced popular repos section with detailed metrics
         popular_section = "\n## 🌟 Featured Projects\n\n"
-        popular_section += "*🔄 Automatically curated based on stars, activity, and releases*\n\n"
+        popular_section += "*🔄 Automatically ranked by contributions, releases, stars, and activity*\n\n"
         
         for i, repo in enumerate(popular_repos, 1):
-            lang_badge = f"![{repo['language']}](https://img.shields.io/badge/-{repo['language']}-blue?style=flat-square)" if repo['language'] else ""
-            stars_badge = f"![Stars](https://img.shields.io/badge/⭐-{repo['stars']}-yellow?style=flat-square)" if repo['stars'] > 0 else ""
+            # Enhanced badges with more metrics
+            badges = []
+            
+            # Language badge
+            if repo['language']:
+                badges.append(f"![{repo['language']}](https://img.shields.io/badge/-{repo['language']}-blue?style=flat-square)")
+            
+            # Stars badge
+            if repo['stars'] > 0:
+                badges.append(f"![Stars](https://img.shields.io/badge/⭐-{repo['stars']}-yellow?style=flat-square)")
+            
+            # Forks badge
+            if repo['forks'] > 0:
+                badges.append(f"![Forks](https://img.shields.io/badge/🔀-{repo['forks']}-green?style=flat-square)")
+            
+            # Contributors badge
+            if repo['contributors_count'] > 1:
+                badges.append(f"![Contributors](https://img.shields.io/badge/👥-{repo['contributors_count']}-purple?style=flat-square)")
+            
+            # Releases badge
+            if repo['releases_count'] > 0:
+                badges.append(f"![Releases](https://img.shields.io/badge/🚀-{repo['releases_count']}_releases-orange?style=flat-square)")
+            
+            # Commits badge (if available)
+            if repo['commits_count'] > 0:
+                commits_display = f"{repo['commits_count']}+" if repo['commits_count'] > 100 else str(repo['commits_count'])
+                badges.append(f"![Commits](https://img.shields.io/badge/📝-{commits_display}_commits-lightgrey?style=flat-square)")
             
             popular_section += f"### {i}. [{repo['name']}]({repo['url']})\n"
             popular_section += f"{repo['description']}\n\n"
             
-            badges_line = " ".join(filter(None, [lang_badge, stars_badge]))
-            if badges_line:
-                popular_section += f"{badges_line}\n"
-                
+            # Display all badges
+            if badges:
+                popular_section += " ".join(badges) + "\n\n"
+            
+            # Additional project info
+            project_info = []
+            
+            # Latest release info
+            if repo['latest_release']:
+                release_name = repo['latest_release'].get('tag_name', 'Unknown')
+                try:
+                    from datetime import datetime
+                    release_date = datetime.fromisoformat(repo['latest_release']['published_at'].replace('Z', '+00:00'))
+                    formatted_date = release_date.strftime("%b %Y")
+                    project_info.append(f"📦 **Latest Release:** [{release_name}]({repo['latest_release']['html_url']}) ({formatted_date})")
+                except:
+                    project_info.append(f"📦 **Latest Release:** [{release_name}]({repo['latest_release']['html_url']})")
+            
+            # Live demo link
             if repo['homepage']:
-                popular_section += f"🌐 **Live Demo:** [{repo['homepage']}]({repo['homepage']})\n"
+                project_info.append(f"🌐 **Live Demo:** [{repo['homepage']}]({repo['homepage']})")
+            
+            # Project activity
+            try:
+                from datetime import datetime
+                updated = datetime.fromisoformat(repo['last_updated'].replace('Z', '+00:00'))
+                formatted_update = updated.strftime("%b %Y")
+                project_info.append(f"🔄 **Last Updated:** {formatted_update}")
+            except:
+                pass
+            
+            # Add project info
+            if project_info:
+                popular_section += "\n".join(project_info) + "\n"
+            
             popular_section += "\n"
         
         # Replace sections using regex
@@ -397,6 +536,12 @@ def main():
     print("🌟 Finding popular repositories...")
     popular_repos = analyzer.get_popular_repos(repos)
     print(f"  Found {len(popular_repos)} featured projects")
+    
+    # Debug: Show top projects with their scores
+    print("🏆 Top ranked projects:")
+    for i, repo in enumerate(popular_repos, 1):
+        print(f"  {i}. {repo['name']} (Score: {repo['score']:.1f})")
+        print(f"     ⭐ {repo['stars']} stars | 🔀 {repo['forks']} forks | 👥 {repo['contributors_count']} contributors | 🚀 {repo['releases_count']} releases")
     
     print("📝 Updating README...")
     analyzer.update_readme(badges, popular_repos)
