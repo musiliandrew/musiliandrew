@@ -55,7 +55,14 @@ Showcasing my knowledge on ETL using csv -> Postgres DB
 🌐 **Live Demo:** [https://etl-pipeline-snowy.vercel.app](https://etl-pipeline-snowy.vercel.app)
 🔄 **Last Updated:** Aug 2025
 
-### 2. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
+### 2. [KenyaRe](https://github.com/musiliandrew/KenyaRe)
+No description available
+
+![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Forks](https://img.shields.io/badge/🔀-1-green?style=flat-square) ![Contributors](https://img.shields.io/badge/👥-2-purple?style=flat-square) ![Commits](https://img.shields.io/badge/📝-2_commits-lightgrey?style=flat-square)
+
+🔄 **Last Updated:** Sep 2025
+
+### 3. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
 Tinder For Nerds
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
@@ -63,7 +70,7 @@ Tinder For Nerds
 🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
 🔄 **Last Updated:** Aug 2025
 
-### 3. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
+### 4. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
 Prottotype Presentation
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
@@ -71,20 +78,12 @@ Prottotype Presentation
 🌐 **Live Demo:** [https://nmg-slideshow.vercel.app](https://nmg-slideshow.vercel.app)
 🔄 **Last Updated:** Aug 2025
 
-### 4. [Core](https://github.com/musiliandrew/Core)
+### 5. [Core](https://github.com/musiliandrew/Core)
 Landing page
 
 ![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
-🔄 **Last Updated:** Aug 2025
-
-### 5. [re-endering](https://github.com/musiliandrew/re-endering)
-No description available
-
-![HTML](https://img.shields.io/badge/-HTML-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://re-endering.vercel.app](https://re-endering.vercel.app)
 🔄 **Last Updated:** Aug 2025
 ---
 
