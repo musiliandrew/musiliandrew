@@ -70,7 +70,7 @@ No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
-🌐 **Live Demo:** [https://stories-kenyan-roots.vercel.app](https://stories-kenyan-roots.vercel.app)
+🌐 **Live Demo:** [https://www.storiescreatives.co.ke/](https://www.storiescreatives.co.ke/)
 🔄 **Last Updated:** Oct 2025
 
 ### 4. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
