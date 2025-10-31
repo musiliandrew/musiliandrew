@@ -81,13 +81,13 @@ Tinder For Nerds
 🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
 🔄 **Last Updated:** Aug 2025
 
-### 5. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
-Prottotype Presentation
+### 5. [BookswapsPage](https://github.com/musiliandrew/BookswapsPage)
+No description available
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
 
-🌐 **Live Demo:** [https://nmg-slideshow.vercel.app](https://nmg-slideshow.vercel.app)
-🔄 **Last Updated:** Aug 2025
+🌐 **Live Demo:** [https://bookswaps-page.vercel.app](https://bookswaps-page.vercel.app)
+🔄 **Last Updated:** Oct 2025
 ---
 
 ## 📊 GitHub Analytics
