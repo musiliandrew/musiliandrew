@@ -57,21 +57,21 @@ Showcasing my knowledge on ETL using csv -> Postgres DB
 🌐 **Live Demo:** [https://etl-pipeline-snowy.vercel.app](https://etl-pipeline-snowy.vercel.app)
 🔄 **Last Updated:** Aug 2025
 
-### 2. [stories-kenyan-roots](https://github.com/musiliandrew/stories-kenyan-roots)
+### 2. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
+Tinder For Nerds
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
+🔄 **Last Updated:** Nov 2025
+
+### 3. [stories-kenyan-roots](https://github.com/musiliandrew/stories-kenyan-roots)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://www.storiescreatives.co.ke/](https://www.storiescreatives.co.ke/)
 🔄 **Last Updated:** Oct 2025
-
-### 3. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
-Tinder For Nerds
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
-🔄 **Last Updated:** Aug 2025
 
 ### 4. [BookswapsPage](https://github.com/musiliandrew/BookswapsPage)
 No description available
