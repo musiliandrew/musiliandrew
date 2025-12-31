@@ -65,15 +65,7 @@ Tinder For Nerds
 🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
 🔄 **Last Updated:** Nov 2025
 
-### 3. [ChatMail](https://github.com/musiliandrew/ChatMail)
-Chat thru email: For fun
-
-![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://chatmail.quantiq.co.ke/](https://chatmail.quantiq.co.ke/)
-🔄 **Last Updated:** Oct 2025
-
-### 4. [stories-kenyan-roots](https://github.com/musiliandrew/stories-kenyan-roots)
+### 3. [stories-kenyan-roots](https://github.com/musiliandrew/stories-kenyan-roots)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
@@ -81,12 +73,20 @@ No description available
 🌐 **Live Demo:** [https://www.storiescreatives.co.ke/](https://www.storiescreatives.co.ke/)
 🔄 **Last Updated:** Oct 2025
 
-### 5. [BookswapsPage](https://github.com/musiliandrew/BookswapsPage)
+### 4. [BookswapsPage](https://github.com/musiliandrew/BookswapsPage)
 No description available
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://bookswaps-page.vercel.app](https://bookswaps-page.vercel.app)
+🔄 **Last Updated:** Oct 2025
+
+### 5. [ChatMail](https://github.com/musiliandrew/ChatMail)
+Chat thru email: For fun
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://chatmail.quantiq.co.ke/](https://chatmail.quantiq.co.ke/)
 🔄 **Last Updated:** Oct 2025
 ---
 
