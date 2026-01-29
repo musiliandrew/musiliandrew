@@ -72,21 +72,21 @@ Tinder For Nerds
 🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
 🔄 **Last Updated:** Nov 2025
 
-### 4. [BookswapsPage](https://github.com/musiliandrew/BookswapsPage)
-No description available
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://bookswaps-page.vercel.app](https://bookswaps-page.vercel.app)
-🔄 **Last Updated:** Oct 2025
-
-### 5. [ChatMail](https://github.com/musiliandrew/ChatMail)
+### 4. [ChatMail](https://github.com/musiliandrew/ChatMail)
 Chat thru email: For fun
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://chatmail.quantiq.co.ke/](https://chatmail.quantiq.co.ke/)
 🔄 **Last Updated:** Oct 2025
+
+### 5. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
+Prottotype Presentation
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://nmg-slideshow.vercel.app](https://nmg-slideshow.vercel.app)
+🔄 **Last Updated:** Aug 2025
 ---
 
 ## 📊 GitHub Analytics
