@@ -29,8 +29,8 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
@@ -64,7 +64,15 @@ No description available
 
 🔄 **Last Updated:** Jan 2026
 
-### 3. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
+### 3. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
+No description available
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://valen-ai-frontend.vercel.app](https://valen-ai-frontend.vercel.app)
+🔄 **Last Updated:** Feb 2026
+
+### 4. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
 Tinder For Nerds
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
@@ -72,21 +80,13 @@ Tinder For Nerds
 🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
 🔄 **Last Updated:** Nov 2025
 
-### 4. [ChatMail](https://github.com/musiliandrew/ChatMail)
+### 5. [ChatMail](https://github.com/musiliandrew/ChatMail)
 Chat thru email: For fun
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://chatmail.quantiq.co.ke/](https://chatmail.quantiq.co.ke/)
 🔄 **Last Updated:** Oct 2025
-
-### 5. [NMG-slideshow](https://github.com/musiliandrew/NMG-slideshow)
-Prottotype Presentation
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://nmg-slideshow.vercel.app](https://nmg-slideshow.vercel.app)
-🔄 **Last Updated:** Aug 2025
 ---
 
 ## 📊 GitHub Analytics
