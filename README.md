@@ -64,7 +64,15 @@ No description available
 
 🔄 **Last Updated:** Jan 2026
 
-### 3. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
+### 3. [pesamali_webpage](https://github.com/musiliandrew/pesamali_webpage)
+No description available
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
+🔄 **Last Updated:** Mar 2026
+
+### 4. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
@@ -72,21 +80,13 @@ No description available
 🌐 **Live Demo:** [https://valen-ai-frontend.vercel.app](https://valen-ai-frontend.vercel.app)
 🔄 **Last Updated:** Feb 2026
 
-### 4. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
+### 5. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
 Tinder For Nerds
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
 🔄 **Last Updated:** Nov 2025
-
-### 5. [ChatMail](https://github.com/musiliandrew/ChatMail)
-Chat thru email: For fun
-
-![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://chatmail.quantiq.co.ke/](https://chatmail.quantiq.co.ke/)
-🔄 **Last Updated:** Oct 2025
 ---
 
 ## 📊 GitHub Analytics
