@@ -72,21 +72,21 @@ No description available
 🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
 🔄 **Last Updated:** Apr 2026
 
-### 4. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
+### 4. [Core](https://github.com/musiliandrew/Core)
+Landing page
+
+![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
+🔄 **Last Updated:** Apr 2026
+
+### 5. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://valen-ai-frontend.vercel.app](https://valen-ai-frontend.vercel.app)
 🔄 **Last Updated:** Feb 2026
-
-### 5. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
-Tinder For Nerds
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
-🔄 **Last Updated:** Nov 2025
 ---
 
 ## 📊 GitHub Analytics
