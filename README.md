@@ -65,28 +65,28 @@ No description available
 🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
 🔄 **Last Updated:** Apr 2026
 
-### 3. [Core](https://github.com/musiliandrew/Core)
-Landing page
-
-![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
-🔄 **Last Updated:** Apr 2026
-
-### 4. [carbonCore_Backend](https://github.com/musiliandrew/carbonCore_Backend)
+### 3. [carbonCore_Backend](https://github.com/musiliandrew/carbonCore_Backend)
 No description available
 
 ![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Stars](https://img.shields.io/badge/⭐-1-yellow?style=flat-square) ![Contributors](https://img.shields.io/badge/👥-2-purple?style=flat-square) ![Commits](https://img.shields.io/badge/📝-4_commits-lightgrey?style=flat-square)
 
 🔄 **Last Updated:** Jan 2026
 
-### 5. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
+### 4. [valenAI-frontend](https://github.com/musiliandrew/valenAI-frontend)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://valen-ai-frontend.vercel.app](https://valen-ai-frontend.vercel.app)
 🔄 **Last Updated:** Feb 2026
+
+### 5. [Core](https://github.com/musiliandrew/Core)
+Landing page
+
+![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
+🔄 **Last Updated:** Apr 2026
 ---
 
 ## 📊 GitHub Analytics
