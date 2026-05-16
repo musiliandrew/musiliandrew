@@ -58,7 +58,23 @@ Showcasing my knowledge on ETL using csv -> Postgres DB
 🌐 **Live Demo:** [https://etl-pipeline-snowy.vercel.app](https://etl-pipeline-snowy.vercel.app)
 🔄 **Last Updated:** Aug 2025
 
-### 2. [pesamali_webpage](https://github.com/musiliandrew/pesamali_webpage)
+### 2. [Japan_Advisory_backend](https://github.com/musiliandrew/Japan_Advisory_backend)
+FastAPI ML backend for Japan -> Kenya import decisioning.
+
+![Python](https://img.shields.io/badge/-Python-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://advisory-backend-225607537736.europe-west1.run.app/](https://advisory-backend-225607537736.europe-west1.run.app/)
+🔄 **Last Updated:** May 2026
+
+### 3. [Kaizen-Advisory-Platform](https://github.com/musiliandrew/Kaizen-Advisory-Platform)
+Kaizen Import: Intelligent car import advisory and ROI forecasting for the Kenyan market.
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://kaizen-advisory-platform.vercel.app/](https://kaizen-advisory-platform.vercel.app/)
+🔄 **Last Updated:** May 2026
+
+### 4. [pesamali_webpage](https://github.com/musiliandrew/pesamali_webpage)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
@@ -66,28 +82,13 @@ No description available
 🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
 🔄 **Last Updated:** Apr 2026
 
-### 3. [carbonCore_Backend](https://github.com/musiliandrew/carbonCore_Backend)
-No description available
+### 5. [Japan-Car-Import-Advisory-Platform-for-Kenyan-Buyers](https://github.com/musiliandrew/Japan-Car-Import-Advisory-Platform-for-Kenyan-Buyers)
+Japan Car Import Advisory Platform 🇰🇪  AI-powered platform to help Kenyans calculate the real cost of importing cars from Japan and compare with local prices.   Features: Firecrawl scraping (SBT, BE FORWARD, etc.), KRA tax calculator, ML price prediction model, and Streamlit dashboard.  Built using Gemini AI • Kaggle • Cloud PostgreSQL
 
-![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Stars](https://img.shields.io/badge/⭐-1-yellow?style=flat-square) ![Contributors](https://img.shields.io/badge/👥-2-purple?style=flat-square) ![Commits](https://img.shields.io/badge/📝-4_commits-lightgrey?style=flat-square)
+![Jupyter Notebook](https://img.shields.io/badge/-Jupyter Notebook-blue?style=flat-square)
 
-🔄 **Last Updated:** Jan 2026
-
-### 4. [Core](https://github.com/musiliandrew/Core)
-Landing page
-
-![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
-🔄 **Last Updated:** Apr 2026
-
-### 5. [Bookswaps](https://github.com/musiliandrew/Bookswaps)
-Tinder For Nerds
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://bookswaps.co.ke](https://bookswaps.co.ke)
-🔄 **Last Updated:** Nov 2025
+🌐 **Live Demo:** [https://www.kaggle.com/code/mwauandrew/japan-kenya-car-import-advisory](https://www.kaggle.com/code/mwauandrew/japan-kenya-car-import-advisory)
+🔄 **Last Updated:** May 2026
 ---
 
 ## 📊 GitHub Analytics
@@ -122,6 +123,7 @@ Tinder For Nerds
 ## 🔥 Recent Activity
 
 <!--START_SECTION:activity-->
+1. 🚀 Published release [Deploy](https://github.com/musiliandrew/Japan_Advisory_backend/releases/tag/New) in [musiliandrew/Japan_Advisory_backend](https://github.com/musiliandrew/Japan_Advisory_backend)
 <!--END_SECTION:activity-->
 
 ---
