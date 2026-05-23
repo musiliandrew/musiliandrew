@@ -53,7 +53,7 @@
 ### 1. [ETL-Pipeline](https://github.com/musiliandrew/ETL-Pipeline)
 Showcasing my knowledge on ETL using csv -> Postgres DB
 
-![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Stars](https://img.shields.io/badge/⭐-1-yellow?style=flat-square) ![Forks](https://img.shields.io/badge/🔀-1-green?style=flat-square)
+![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Stars](https://img.shields.io/badge/⭐-1-yellow?style=flat-square) ![Forks](https://img.shields.io/badge/🔀-1-green?style=flat-square) ![Commits](https://img.shields.io/badge/📝-12_commits-lightgrey?style=flat-square)
 
 🌐 **Live Demo:** [https://etl-pipeline-snowy.vercel.app](https://etl-pipeline-snowy.vercel.app)
 🔄 **Last Updated:** Aug 2025
