@@ -19,7 +19,6 @@
 
 ---
 
-
 ## 🛠️ Technology Stack
 
 *🔄 Automatically updated based on repository analysis*
@@ -43,8 +42,8 @@
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
----
 
+---
 
 ## 🌟 Featured Projects
 
@@ -67,7 +66,7 @@ Kaizen Import: Intelligent car import advisory and ROI forecasting for the Kenya
 🔄 **Last Updated:** May 2026
 
 ### 3. [Japan-Car-Import-Advisory-Platform-for-Kenyan-Buyers](https://github.com/musiliandrew/Japan-Car-Import-Advisory-Platform-for-Kenyan-Buyers)
-Japan Car Import Advisory Platform 🇰🇪  AI-powered platform to help Kenyans calculate the real cost of importing cars from Japan and compare with local prices.   Features: Firecrawl scraping (SBT, BE FORWARD, etc.), KRA tax calculator, ML price prediction model, and Streamlit dashboard.  Built using Gemini AI • Kaggle • Cloud PostgreSQL
+Japan Car Import Advisory Platform 🇰🇪  AI-powered platform to help Kenyans calculate the real cost of importing cars from Japan and compare with local prices. Features: Firecrawl scraping (SBT, BE FORWARD, etc.), KRA tax calculator, ML price prediction model, and Streamlit dashboard. Built using Gemini AI • Kaggle • Cloud PostgreSQL
 
 ![Jupyter Notebook](https://img.shields.io/badge/-Jupyter Notebook-blue?style=flat-square)
 
@@ -88,26 +87,54 @@ No description available
 
 🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
 🔄 **Last Updated:** Apr 2026
+
 ---
 
-## 📊 GitHub Analytics
+## 🏆 GitHub Milestones & Trophies
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=musiliandrew&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=musiliandrew&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=musiliandrew&layout=compact&theme=tokyonight&hide_border=true&count_private=true)
+<!-- Smart Fallback System: If devomb fails or hits a rate limit, the vercel endpoint automatically loads inside it -->
+<object type="image/svg+xml" data="https://github-trophies.devomb.com/?username=musiliandrew&theme=tokyonight&margin-w=15">
+  <img src="https://github-profile-trophy.vercel.app/?username=musiliandrew&theme=tokyonight&no-frame=true&no-bg=true" alt="GitHub Trophies" />
+</object>
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
+## 📊 Systems Analytics & Activity Core
+
 <div align="center">
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=musiliandrew&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4)
+| Operational Matrix | Core Language Allocation |
+| :---: | :---: |
+| ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=musiliandrew&show_icons=true&theme=tokyonight&hide_border=true&count_private=true) | ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=musiliandrew&layout=compact&theme=tokyonight&hide_border=true&count_private=true) |
+
+<br>
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=musiliandrew&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+## 💻 Real-Time Development Matrix
+
+<div align="center">
+
+<!-- Dynamic live IDE coding tracking terminal -->
+![WakaTime Terminal Stats](https://github-readme-stats.vercel.app/api/wakatime?username=musiliandrew&theme=tokyonight&layout=compact&hide_border=true)
+
+</div>
+
+---
+
+## 🧱 3D Contribution Skyline
+
+<div align="center">
+
+![Andrew's 3D Isometric Skyline](https://github-profile-3d-contrib.vercel.app/api?username=musiliandrew&theme=tokyonight)
 
 </div>
 
