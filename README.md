@@ -19,6 +19,7 @@
 
 ---
 
+
 ## 🛠️ Technology Stack
 
 *🔄 Automatically updated based on repository analysis*
@@ -42,8 +43,8 @@
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-
 ---
+
 
 ## 🌟 Featured Projects
 
@@ -66,7 +67,7 @@ Kaizen Import: Intelligent car import advisory and ROI forecasting for the Kenya
 🔄 **Last Updated:** May 2026
 
 ### 3. [Japan-Car-Import-Advisory-Platform-for-Kenyan-Buyers](https://github.com/musiliandrew/Japan-Car-Import-Advisory-Platform-for-Kenyan-Buyers)
-Japan Car Import Advisory Platform 🇰🇪  AI-powered platform to help Kenyans calculate the real cost of importing cars from Japan and compare with local prices. Features: Firecrawl scraping (SBT, BE FORWARD, etc.), KRA tax calculator, ML price prediction model, and Streamlit dashboard. Built using Gemini AI • Kaggle • Cloud PostgreSQL
+Japan Car Import Advisory Platform 🇰🇪  AI-powered platform to help Kenyans calculate the real cost of importing cars from Japan and compare with local prices.   Features: Firecrawl scraping (SBT, BE FORWARD, etc.), KRA tax calculator, ML price prediction model, and Streamlit dashboard.  Built using Gemini AI • Kaggle • Cloud PostgreSQL
 
 ![Jupyter Notebook](https://img.shields.io/badge/-Jupyter Notebook-blue?style=flat-square)
 
@@ -87,7 +88,6 @@ No description available
 
 🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
 🔄 **Last Updated:** Apr 2026
-
 ---
 
 ## 🏆 GitHub Milestones & Trophies
