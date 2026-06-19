@@ -58,14 +58,22 @@ Showcasing my knowledge on ETL using csv -> Postgres DB
 🌐 **Live Demo:** [https://etl-pipeline-snowy.vercel.app](https://etl-pipeline-snowy.vercel.app)
 🔄 **Last Updated:** Aug 2025
 
-### 2. [carbonCore_Backend](https://github.com/musiliandrew/carbonCore_Backend)
+### 2. [CareerScoper](https://github.com/musiliandrew/CareerScoper)
+No description available
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
+
+🌐 **Live Demo:** [https://careerscope.me](https://careerscope.me)
+🔄 **Last Updated:** Jun 2026
+
+### 3. [carbonCore_Backend](https://github.com/musiliandrew/carbonCore_Backend)
 No description available
 
 ![Python](https://img.shields.io/badge/-Python-blue?style=flat-square) ![Stars](https://img.shields.io/badge/⭐-1-yellow?style=flat-square) ![Contributors](https://img.shields.io/badge/👥-2-purple?style=flat-square) ![Commits](https://img.shields.io/badge/📝-4_commits-lightgrey?style=flat-square)
 
 🔄 **Last Updated:** Jan 2026
 
-### 3. [Kaizen-Advisory-Platform](https://github.com/musiliandrew/Kaizen-Advisory-Platform)
+### 4. [Kaizen-Advisory-Platform](https://github.com/musiliandrew/Kaizen-Advisory-Platform)
 Kaizen Import: Intelligent car import advisory and ROI forecasting for the Kenyan market.
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
@@ -73,20 +81,12 @@ Kaizen Import: Intelligent car import advisory and ROI forecasting for the Kenya
 🌐 **Live Demo:** [https://kaizen-advisory-platform.vercel.app/](https://kaizen-advisory-platform.vercel.app/)
 🔄 **Last Updated:** May 2026
 
-### 4. [pesamali_webpage](https://github.com/musiliandrew/pesamali_webpage)
+### 5. [pesamali_webpage](https://github.com/musiliandrew/pesamali_webpage)
 No description available
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://pesamali-webpage.vercel.app](https://pesamali-webpage.vercel.app)
-🔄 **Last Updated:** Apr 2026
-
-### 5. [Core](https://github.com/musiliandrew/Core)
-Landing page
-
-![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
-
-🌐 **Live Demo:** [https://www.quantiq.co.ke](https://www.quantiq.co.ke)
 🔄 **Last Updated:** Apr 2026
 ---
 
