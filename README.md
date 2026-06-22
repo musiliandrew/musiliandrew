@@ -61,7 +61,7 @@ Showcasing my knowledge on ETL using csv -> Postgres DB
 ### 2. [CareerScoper](https://github.com/musiliandrew/CareerScoper)
 No description available
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
+![Python](https://img.shields.io/badge/-Python-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://careerscope.me](https://careerscope.me)
 🔄 **Last Updated:** Jun 2026
