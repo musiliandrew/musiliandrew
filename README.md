@@ -43,6 +43,10 @@
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+
+### 🤖 AI/ML
+![OpenAI](https://img.shields.io/badge/OpenAI-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 ---
 
 
@@ -61,7 +65,7 @@ Showcasing my knowledge on ETL using csv -> Postgres DB
 ### 2. [CareerScoper](https://github.com/musiliandrew/CareerScoper)
 No description available
 
-![Python](https://img.shields.io/badge/-Python-blue?style=flat-square)
+![JavaScript](https://img.shields.io/badge/-JavaScript-blue?style=flat-square)
 
 🌐 **Live Demo:** [https://careerscope.me](https://careerscope.me)
 🔄 **Last Updated:** Jun 2026
