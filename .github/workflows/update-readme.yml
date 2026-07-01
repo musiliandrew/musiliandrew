@@ -106,8 +106,7 @@ jobs:
         uses: yoshi389111/github-profile-3d-contrib@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: musiliandrew
+          USERNAME: ${{ github.repository_owner }}
 
       # 6) Single consolidated commit for all generated assets
       - name: Commit generated assets
