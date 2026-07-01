@@ -162,7 +162,7 @@ No description available
 ## 🔥 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ℹ️ Assigned PR [#1](https://github.com/musiliandrew/musiliandrew/pull/1) in [musiliandrew/musiliandrew](https://github.com/musiliandrew/musiliandrew)
+1. ℹ️ Assigned PR [#2](https://github.com/musiliandrew/musiliandrew/pull/2) in [musiliandrew/musiliandrew](https://github.com/musiliandrew/musiliandrew)
 <!--END_SECTION:activity-->
 
 ---
