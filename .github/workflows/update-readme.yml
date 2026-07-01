@@ -27,7 +27,6 @@ jobs:
     env:
       # Surfaced as env so we can gate steps that need extra secrets.
       METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
-      WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
     steps:
       - name: Checkout repository
@@ -60,19 +59,12 @@ jobs:
           COMMIT_MSG: '⚡ Auto-update recent activity'
           MAX_LINES: 10
 
-      # 3) WakaTime terminal stats -> injects between <!--START_SECTION:waka--> markers
-      #    Requires the WAKATIME_API_KEY repo secret. Skipped gracefully if absent.
+      # 3) WakaTime terminal stats -> reads public API endpoint
+      #    No secrets required. Renders terminal breakdown via CI script.
       - name: Update WakaTime terminal stats
-        if: ${{ env.WAKATIME_API_KEY != '' }}
-        uses: athul/waka-readme@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SECTION_NAME: waka
-          SHOW_TIME: 'true'
-          SHOW_TOTAL: 'true'
-          COMMIT_MESSAGE: '⌨️ Auto-update WakaTime stats'
-          TIME_RANGE: last_7_days
+        run: python scripts/update_wakatime.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # 4) GitHub stats + top languages as COMMITTED SVGs (no 503, unlike the
       #    public github-readme-stats instance). Requires METRICS_TOKEN (a PAT
