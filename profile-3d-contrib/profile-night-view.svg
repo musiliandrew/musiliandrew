@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-label="3D contribution skyline placeholder">
+  <rect width="880" height="240" rx="12" fill="#0d1117"/>
+  <text x="40" y="70" fill="#00d4aa" font-family="'Segoe UI',Ubuntu,Sans-Serif" font-size="24" font-weight="700">🧱 3D Contribution Skyline</text>
+  <text x="40" y="120" fill="#a9b1d6" font-family="'Segoe UI',Ubuntu,Sans-Serif" font-size="16">Generating…</text>
+  <text x="40" y="152" fill="#565f89" font-family="'Segoe UI',Ubuntu,Sans-Serif" font-size="13">Run the "Update README" workflow (Actions tab) to render your</text>
+  <text x="40" y="174" fill="#565f89" font-family="'Segoe UI',Ubuntu,Sans-Serif" font-size="13">isometric contribution skyline here — no extra secret required.</text>
+</svg>
