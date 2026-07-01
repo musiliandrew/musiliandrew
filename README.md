@@ -162,7 +162,7 @@ No description available
 ## 🔥 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [Deploy](https://github.com/musiliandrew/Japan_Advisory_backend/releases/tag/New) in [musiliandrew/Japan_Advisory_backend](https://github.com/musiliandrew/Japan_Advisory_backend)
+1. ℹ️ Assigned PR [#1](https://github.com/musiliandrew/musiliandrew/pull/1) in [musiliandrew/musiliandrew](https://github.com/musiliandrew/musiliandrew)
 <!--END_SECTION:activity-->
 
 ---
